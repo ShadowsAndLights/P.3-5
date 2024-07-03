@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/stylecorrect1.css">
+</head>
+
+<body>
+    <div class="main-container"><!--Cette partie prendra en compte l'en-tête avec le logo, le titre, les liens ainsi que le formulaire de recherche,le bloc hebergement-and-populaires, le bloc activites et enfin le footer.-->
+
+        <!-- Navi Bar -->
+        <header>
+            <img class="Bar_icon" src="images/logo/Booki.png" alt="logo Booki bleu sur fond blanc avec symbole d'un trou de serrure localisé au centre du second o de booki"><!--Représentation à gauche du logo Booki de couleur bleue sur fond blanc.-->  
+            <nav class="Bar__navItem">
+                <ul>
+                    <li><a class="MenuHebergements" href="#hebergementsMarseille">Hébergements</a></li><!--effet de survol avec bandeau bleu au-desssus de l'intitulé-->
+                    <li><a class="MenuActivites" href="#activiesMarseille">Activités</a></li><!--effet de survol avec bandeau bleu au-desssus de l'intitulé-->
+                </ul>
+            </nav>
+        </header>
+
+            <!-- General Info Bar -->
+            
+            <div class="InfoGroup">
+              <div class="Recherche"><!--Headline-->
+				<h1>Trouver votre hébergement pour des vacances de rêve</h1><!--Titre de ma page en noir gras (Raleway 700) situé en haut à gauche-->
+                <p>En plein centre-ville ou en pleine nature</p><!--Situé juste en dessous de mon titre de couleur grisé (Raleway 400).-->
+              </div>
+			
+              <div class="SearchBar"><!--Search Bar-->
+                <form method="post" class="SearchBox"><!--Search Bar-->
+                  <div class="LocationDot">
+                      <i class="fa-solid fa-location-dot"></i>  
+                      <input type="text" id="maRecherche" placeholder="Marseille, France">
+                      <button class="ButtonSearch" type="submit">Rechercher</button>
+                  </div> 
+                </form>
+              </div>
+
+              <div class="button-filters"><!--Filters Bar-->
+                <h2>Filtres</h2><!--Police Raleway 700, effet gras,-->
+                <div class="filter-icons">
+                    <ul>
+                        <li><button class="ButtonText ButtonHover" name="button"><i class="fa-solid fa-money-bill-wave ButtonIcon"></i>Economique</button></li><!--Filtre pour faire un séjour à prix mini-->    
+                        <li><button class="ButtonSize ButtonText ButtonHover" name="button"><i class="fa-solid fa-person ButtonIconP"></i>Familial</button></li><!--Filtre adapté pour les recherches de vacances en familles-->
+                        <li><button class="ButtonText ButtonHover" name="button"><i class="fa-solid fa-heart ButtonIcon"></i>Romantique</button></li><!--Filtre pour un moment à deux-->
+                        <li><button class="ButtonText ButtonHover" name="button"><i class="fa-solid fa-fire ButtonIcon"></i>Nos pépites</button></li><!--Filtre pour un lieu unique-->
+                    </ul>    
+                </div>
+              </div>
+              <div>  
+                <div class="Info"><!--Info Bar-->    
+                 <p class="infobarText"> <i class="fa-solid fa-info circle-info"></i> Plus de 500 logements sont disponibles dans cette ville</p><!--Police Raileway 400, grisé-->
+                </div>
+              </div>
+            </div>  
+     
+        <!-- Sections Hebergements-and-populaires-->
+        <main>
+            <div class="hebergements-and-populaires">
+                <section class="hebergements" id="hebergementsMarseille">
+                    <div class="hebergements-title">
+                        <h2 class="hebergements-section-title">Hébergements à Marseille</h2><!--Police Raileway 700.-->
+                    </div>  
+                    <div class="hebergements-cards container"><!--Frame 15-->
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits simples">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>     
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image plan large de la chambre d'hôtel metant en avant le bureau en face la fenêtre à droite et les deux lits simples situés à gauche en entrant">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Chez Amina</h3><!--Police Raleway 700, 16px-->
+                                        <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p><!--Police Raleway 400, 16px-->
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a> 
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/reisetopia.jpg" alt="Image armoire et lit double avec tables de chevets">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Les mouettes</h3><!--Police Raleway 700, 16px-->
+                                        <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a> 
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/annie-spratt.jpg" alt="Image chambre joliment coloré en bleu et blanc avec lit double">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel de la mer</h3><!--Police Raleway 700, 16px-->
+                                        <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a> 
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/marcus-loke.jpg" alt="Image lits superposés dans un dortoir avec vue sur la rue">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Auberge La Canebière</h3><!--Police Raleway 700, 16px-->
+                                        <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a> 
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/nicate-lee.jpg" alt="Image deux lits superposés en bois avec rideaux individuels pour plus d'intimité">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Auberge Le Panier</h3><!--Police Raleway 700, 16px-->
+                                        <p class="card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a> 
+                    </div>    
+                        <p class="afficheplus">Afficher plus<p><!--Police Raleway 700-->              
+                </section>
+
+
+                <section class="populaires">
+                    <div class="populaires-title">
+                        <h2 class="section-title">Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="populaires-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+
+        <!-- Section activites-at-marseille-->
+            <div>
+                 <section class="activites-at-marseille" id="activiesMarseille">
+                     <h2 class="section-title">Activités à Marseille</h2><!--Police Raleway 700.-->
+                     <div class="block-a-card activites-cards"><!--Frame 14-->  
+                        <a href="#"><!--Découvrir et visiter le Vieux-Port.-->                  
+                         <article class="under-block">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port avec des bateaux">
+                            <h3 class="card-title">Vieux-Port</h3><!--Photo présentant le vieux-port-->
+                         </article>
+                        </a>
+
+                        <a href="#"><!--En apprendre davantage sur l'histoire du Fort.--> 
+                         <article class="under-block">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort avec les ruines qui l'entourent">
+                            <h3 class="card-title">Fort de Pomègues</h3><!--Vue depuis le bas du Fort-->
+                         </article>
+                        </a>
+
+                        <a href="#"> <!--Faire de belles randonnées au sein du Parc des Calanques.-->
+                         <article class="under-block">                            
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques">
+                            <h3 class="card-title">Parc national des Calanques</h3><!--Vue de la mer et des calanques-->
+                         </article>
+                        </a>
+                        <a href="#"><!--Admirer les détails de la basilique et ressentez son vécu-->
+                         <article class="under-block">                            
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde en arrière-plan">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3><!--Vue de la cité phocéenne et de la basilique située en hauteur-->
+                         </article>
+                        </a>
+                    </div>
+                 </section>
+            </div>    
+        </main>
+
+        
+        <!-- Sections footer-->
+        <footer>
+            <div class="FooterContent">
+                     <div class="containerFooter">
+                     <h3 class="footer-section-title">A propos</h3><!--Mettre en gras Raleway 700-->       
+                       <ul>
+                          <li><a class="footer-subtitle" href="#">Fonctionnement du site</a><!--ne pas mettre en gras Raleway 400--></li>
+                          <li><a class="footer-subtitle" href="#">Conditions générales</a><!--ne pas mettre en gras--></li>
+                          <li><a class="footer-subtitle" href="#">Données et confidentialité</a><!--ne pas mettre en gras--></li>
+                       </ul> 
+                     </div> 
+
+                     <div class="containerFooter">
+                     <h3 class="footer-section-title">Nos hébergements</h3><!--Mettre en gras--> 
+                       <ul>
+                          <li><a class="footer-subtitle" href="#">Charte qualité</a><!--ne pas mettre en gras--></li>
+                          <li><a class="footer-subtitle" href="#">Proposer votre hôtel</a><!--ne pas mettre en gras--></li>
+                       </ul>    
+                     </div>
+
+                     <div class="containerFooter"> 
+                     <h3 class="footer-section-title">Assistance</h3><!--Mettre en gras--> 
+                       <ul>
+                          <li><a class="footer-subtitle" href="#">Centre d'aide</a><!--ne pas mettre en gras--></li>
+                          <li><a class="footer-subtitle" href="#">Nous contacter</a><!--ne pas mettre en gras--></li>
+                       </ul>                           
+                     </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
